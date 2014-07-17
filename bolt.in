@@ -15,5 +15,5 @@ if __name__ == "__main__":
 
 	app = Bolt()
 	signal.signal(signal.SIGINT, signal.SIG_DFL)
-	exit = app.run()
+	exit = app.run(sys.argv)
 	sys.exit(exit)
