@@ -9,3 +9,8 @@ Bolt is a quick way to manage your todo's and tasks in a quick yet efficient man
 
 - Python3 --- should be available in all Linux distribution package managers (usually as `python3`).
 - GTK
+
+
+# License
+
+See LICENSE file included in this repository.
