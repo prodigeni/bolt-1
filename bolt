@@ -2,12 +2,12 @@
 
 import sys, signal, os
 
-sys.path.insert(1, '/usr/local/lib/python3.4/site-packages')
+sys.path.insert(1, '/usr/lib/python3.4/site-packages')
 
 from gi.repository import Gio, Gtk
 from bolt.application import Bolt
 
-pkgdatadir = '/usr/local/share/bolt'
+pkgdatadir = '/usr/share/bolt'
 
 if __name__ == "__main__":
 	resource = Gio.resource_load(os.path.join(pkgdatadir, "bolt.gresource"))
@@ -15,6 +15,5 @@ if __name__ == "__main__":
 
 	app = Bolt()
 	signal.signal(signal.SIGINT, signal.SIG_DFL)
-	print("Running App...")
-	exit = app.run()
+	exit = app.run(sys.argv)
 	sys.exit(exit)

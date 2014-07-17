@@ -7,6 +7,13 @@ class Window(Gtk.ApplicationWindow):
 	def __init__(self, app):
 		Gtk.Window.__init__(self, application=app)
 
+		box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
+		self.add(box)
+
+		list_tasks = Gtk.ListView()
+		tasks.set_size_request(250, -1)
+		box.pack_start(list_tasks)
+
 		self.set_titlebar(self._setupTitle())
 
 		self.set_size_request(800, 500)
@@ -46,3 +53,4 @@ class Window(Gtk.ApplicationWindow):
 		hb.set_custom_title(box)
 
 		return hb
+

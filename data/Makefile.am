@@ -15,12 +15,14 @@ ic_22dir = $(datadir)/icons/hicolor/22x22/apps
 ic_32dir = $(datadir)/icons/hicolor/32x32/apps
 ic_48dir = $(datadir)/icons/hicolor/48x48/apps
 ic_256dir = $(datadir)/icons/hicolor/256x256/apps
+ic_scalabledir = $(datadir)/icons/hicolor/scalable/apps
 
-ic_16_DATA = icons/bolt-16.png
-ic_22_DATA = icons/bolt-22.png
-ic_32_DATA = icons/bolt-32.png
-ic_48_DATA = icons/bolt-48.png
-ic_256_DATA = icons/bolt-256.png
+ic_16_DATA = icons/16/bolt.png
+ic_22_DATA = icons/22/bolt.png
+ic_32_DATA = icons/32/bolt.png
+ic_48_DATA = icons/48/bolt.png
+ic_256_DATA = icons/256/bolt.png
+ic_scalable_DATA = icons/bolt.svg
 
 ic_files = \
 	$(ic_16_DATA) \
@@ -28,7 +30,7 @@ ic_files = \
 	$(ic_32_DATA) \
 	$(ic_48_DATA) \
 	$(ic_256_DATA) \
-	icons/hicolor/bolt.svg
+	$(ic_scalable_DATA)
 
 gtk_update_icon_cache = gtk-update-icon-cache -f -t $(datadir)/icons/hicolor
 

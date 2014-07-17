@@ -32,7 +32,7 @@ class Bolt(Gtk.Application):
 	def _about(self, action=None, param=None):
 		builder = Gtk.Builder()
 		builder.add_from_resource('/com/byhestia/Bolt/about-dialog.ui')
-		about = builder.get('about_dialog')
+		about = builder.get_object('about-dialog')
 		about.set_transient_for(self._window)
 		about.connect('response', self._response)
 		about.show()
@@ -47,6 +47,7 @@ class Bolt(Gtk.Application):
 
 	def _quit(self, action=None, param=None):
 		self._window.destroy()
+		Gtk.main_quit()
 
 	def do_activate(self):
 		self._window = Window(self)
