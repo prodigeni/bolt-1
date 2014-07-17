@@ -1,0 +1,14 @@
+<interface domain="bolt">
+	<object class="GtkAboutDialog" id="about_dialog">
+		<property name="can_focus">False</property>
+		<property name="modal">True</property>
+	    <property name="program_name" translatable="yes">Bolt</property>
+	    <property name="version">0.1</property>
+	    <property name="copyright" translatable="yes">Copyright © 2014 Hesta</property>
+	    <property name="comments" translatable="yes">Task management done right.</property>
+	    <property name="website">http://byhestia.com</property>
+	    <property name="website_label" translatable="yes">Hestia's Website</property>
+	    <property name="license" translatable="yes"></property>
+	    <property name="logo_icon_name">bolt</property>
+	</object>
+</interface>

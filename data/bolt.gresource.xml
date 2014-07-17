@@ -1,0 +1,6 @@
+<gresources>
+	<gresource prefix="/com/byhestia/Bolt">
+		<file preprocess="xml-stripblanks">about-dialog.ui</file>
+		<file preprocess="xml-stripblanks">bolt-menu.ui</file>
+	</gresource>
+</gresources>
