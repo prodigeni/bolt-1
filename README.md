@@ -7,5 +7,5 @@ Bolt is a quick way to manage your todo's and tasks in a quick yet efficient man
 
 # Requirements
 
-- Python3
+- Python3 --- should be available in all Linux distribution package managers (usually as `python3`).
 - GTK
